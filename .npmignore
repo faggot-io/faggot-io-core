@@ -1,4 +1,6 @@
-src
-node_modules
 docs
+docs-theme
+node_modules
 npm-debug.log
+src
+test

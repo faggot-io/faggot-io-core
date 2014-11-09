@@ -10,7 +10,7 @@ exports.Constructing =
 
 	'default stream': (test) ->
 		item = new Log
-		test.strictEqual item.stream, 'faggot-io-core'
+		test.strictEqual item.stream, 'logsack-core'
 		test.done()
 
 	'default time': (test) ->
@@ -187,7 +187,7 @@ exports.GetData =
 			'+log'
 			12345678
 			os.hostname()
-			'faggot-io-core'
+			'logsack-core'
 			'testing'
 		]
 		test.done()
@@ -203,5 +203,5 @@ exports.toString =
 			text: 'testing'
 			time: 12345678
 
-		test.strictEqual String(item), "+log|12345678|#{os.hostname()}|faggot-io-core|testing"
+		test.strictEqual String(item), "+log|12345678|#{os.hostname()}|logsack-core|testing"
 		test.done()

@@ -1,49 +1,18 @@
-faggot-io-core [![Build Status](https://travis-ci.org/faggot-io/faggot-io-core.svg)](https://travis-ci.org/faggot-io/faggot-io-core) [![NPM version](https://badge.fury.io/js/faggot-io-core.svg)](http://badge.fury.io/js/faggot-io-core) ![License: GPLv3+](http://img.shields.io/badge/license-GPLv3%2B-brightgreen.svg)
+# Logsack core [![Build Status](https://travis-ci.org/muchweb/logsack-core.svg)](https://travis-ci.org/muchweb/logsack-core) [![NPM version](https://badge.fury.io/js/logsack-core.svg)](http://badge.fury.io/js/logsack-core) ![License: GPLv3+](http://img.shields.io/badge/license-GPLv3%2B-brightgreen.svg)
 =================================================
 
-## Server TCP Interface
+## Log class
 
-Harvesters connect to the server via TCP, and write properly formatted strings to the socket.  Third party harvesters can send messages to the server using the following commands:
+### Properties
 
-Register a new node
+ - `node`: Represents current node (machine), default: hostname
+ - `stream`: Represents worker or program name, default: name is working directory
+ - `time`: Log time stamp
+ - `status`: Log status: `info`, `warning`, etc…
 
-    +node|node\n
-
-Remove a node with all streams
-
-    -node|node\r\n
-
-Register stream associations
-
-    +stream|node|stream1,stream2\r\n
-
-Remove stream associations
-
-    -stream|node|stream1,stream2\r\n
-
-Send a log message
-
-    +log|node|name|timestamp|status|this is log message\n
-
-## Building
-
-There are no global dependencies
-
-    npm install
-
-## Testing
-
-There are no gloabal NPM dependencies.
-
-    npm test
-
-### Compiling documentation
-
-There are no gloabal NPM dependencies.
-
-    npm run docs
-
-Then navigate to `docs/index.html`. Documentation theme is based on [yuidoc-bootstrap-theme](https://www.npmjs.org/package/yuidoc-bootstrap-theme).
+```
+item = new Log
+```
 
 ## Credits
 
