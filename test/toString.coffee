@@ -12,6 +12,5 @@ exports.toString =
 		item = new Log
 			text: 'testing'
 			time: 12345678
-
 		test.strictEqual String(item), "+log|12345678|#{os.hostname()}|logsack-core|testing"
 		test.done()
