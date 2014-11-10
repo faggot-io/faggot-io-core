@@ -1,5 +1,4 @@
 # Logsack core [![Build Status](https://travis-ci.org/muchweb/logsack-core.svg)](https://travis-ci.org/muchweb/logsack-core) [![NPM version](https://badge.fury.io/js/logsack-core.svg)](http://badge.fury.io/js/logsack-core) ![License: GPLv3+](http://img.shields.io/badge/license-GPLv3%2B-brightgreen.svg)
-=================================================
 
 ## Log class
 

@@ -68,7 +68,7 @@ exports.Log = class
 
 	###*
 		Contents of the log
-		@property is_text
+		@property text
 		@type String
 		@default null
 	###
